@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Список курсов</title>
+</head>
+<body>
+  <h1>Список курсов</h1>
+
+  <nav>
+    <a href="/">Главная</a> |
+    <a href="/authors/">Авторы</a> |
+    <a href="/info/">Info</a>
+  </nav>
+
+  <ul>
+    {% for c in courses %}
+      <li>
+        <a href="/courses/{{ c.id }}/">{{ c.title }}</a>
+        — {{ c.level }}
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

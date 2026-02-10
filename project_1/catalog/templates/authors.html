@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Список авторов</title>
+</head>
+<body>
+  <h1>Список авторов</h1>
+
+  <nav>
+    <a href="/">Главная</a> |
+    <a href="/courses/">Курсы</a> |
+    <a href="/info/">Info</a>
+  </nav>
+
+  <ul>
+    {% for a in authors %}
+      <li><a href="/authors/{{ a.id }}/">{{ a.name }}</a></li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
