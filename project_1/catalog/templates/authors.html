@@ -14,8 +14,10 @@
   </nav>
 
   <ul>
-    {% for a in authors %}
-      <li><a href="/authors/{{ a.id }}/">{{ a.name }}</a></li>
+    {% for author in authors %}
+      <li><a href="/authors/{{ author.id }}/">
+        {{ author.first_name }} {{ author.last_name }}
+      </a></li>
     {% endfor %}
   </ul>
 </body>

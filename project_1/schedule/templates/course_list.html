@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}Список курсов{% endblock %}
+
+{% block content %}
+    <h2>Список курсов</h2>
+
+    <section>
+        {% for course in courses %}
+            <article>
+                <h3><a href="/schedule/courses/{{ course.id }}/">{{ course.title }}</a></h3>
+                <p><strong>Автор:</strong> 
+                    {% if course.teacher %}
+                        <a href="/schedule/teachers/{{ course.teacher.id }}/">
+                            {{ course.teacher.first_name }} {{ course.teacher.last_name }}
+                        </a>
+                    {% else %}
+                        не указан
+                    {% endif %}
+                </p>
+                <p><strong>Ранг:</strong> {{ course.level }}</p>
+                <p>{{ course.description|truncatechars:100 }}</p>
+            </article>
+        {% empty %}
+            <p>Нет курсов</p>
+        {% endfor %}
+    </section>
+{% endblock %}

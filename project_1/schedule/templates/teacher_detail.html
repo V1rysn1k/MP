@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ teacher.first_name }} {{ teacher.last_name }}{% endblock %}
+
+{% block content %}
+    <h2>{{ teacher.first_name }} {{ teacher.last_name }}</h2>
+
+    <section>
+        <h3>Основная информация</h3>
+        <p><strong>Имя:</strong> {{ teacher.first_name }} {{ teacher.last_name }}</p>
+        
+        {% if teacher.info %}
+            <p><strong>Email:</strong> {{ teacher.info.email }}</p>
+            <p><strong>Биография:</strong> {{ teacher.info.bio|default:"Не указана" }}</p>
+        {% else %}
+            <p><em>Дополнительная информация отсутствует</em></p>
+        {% endif %}
+    </section>
+
+    <section>
+        <h3>Курсы преподавателя</h3>
+        {% if courses %}
+            <ul>
+                {% for course in courses %}
+                    <li><a href="/schedule/courses/{{ course.id }}/">{{ course.title }}</a> ({{ course.level }})</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Нет курсов</p>
+        {% endif %}
+    </section>
+{% endblock %}

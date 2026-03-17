@@ -9,17 +9,60 @@
     <a href="/">Главная</a> |
     <a href="/courses/">Курсы</a> |
     <a href="/authors/">Авторы</a> |
-    <a href="/info/">Info</a>
+    <a href="/info/">Info</a> |
+
   </nav>
 
   <h1>{{ course.title }}</h1>
   <p><b>Уровень:</b> {{ course.level }}</p>
   <p>{{ course.description }}</p>
 
-  {% if author %}
-    <p><b>Автор:</b> <a href="/authors/{{ author.id }}/">{{ author.name }}</a></p>
+  {% if course.teacher %}
+    <p><b>Автор:</b> <a href="/authors/{{ course.teacher.id }}/">
+      {{ course.teacher.first_name }} {{ course.teacher.last_name }}
+    </a></p>
   {% else %}
     <p><b>Автор:</b> неизвестен</p>
   {% endif %}
+
+  {% if success_message %}
+    <p>{{ success_message }}</p>
+  {% endif %}
+
+  <h2>Записаться на курс</h2>
+  <form method="post">
+    {% csrf_token %}
+    
+    <p>
+      <label>Имя:</label><br>
+      <input type="text" name="first_name" required>
+    </p>
+    
+    <p>
+      <label>Фамилия:</label><br>
+      <input type="text" name="last_name" required>
+    </p>
+    
+    <p>
+      <label>Email:</label><br>
+      <input type="email" name="email" required>
+    </p>
+    
+    <p>
+      <label>Телефон:</label><br>
+      <input type="text" name="phone">
+    </p>
+    
+    <p>
+      <label>Дата рождения:</label><br>
+      <input type="date" name="birth_date" required>
+    </p>
+    
+    <p>
+      <button type="submit">Записаться</button>
+    </p>
+  </form>
+
+  <p><a href="/courses/">← Вернуться к списку курсов</a></p>
 </body>
 </html>

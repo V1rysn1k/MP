@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+    <h2>Добро пожаловать в систему расписания</h2>
+
+    <section>
+        <h3>Статистика</h3>
+        <ul>
+            <li>Преподавателей: {{ teachers_count }}</li>
+            <li>Курсов: {{ courses_count }}</li>
+            <li>Студентов: {{ students_count }}</li>
+        </ul>
+    </section>
+{% endblock %}

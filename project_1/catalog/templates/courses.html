@@ -14,10 +14,10 @@
   </nav>
 
   <ul>
-    {% for c in courses %}
+    {% for course in courses %}
       <li>
-        <a href="/courses/{{ c.id }}/">{{ c.title }}</a>
-        — {{ c.level }}
+        <a href="/courses/{{ course.id }}/">{{ course.title }}</a>
+        — {{ course.level }}
       </li>
     {% endfor %}
   </ul>

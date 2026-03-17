@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ student.first_name }} {{ student.last_name }}{% endblock %}
+
+{% block content %}
+    <h2>{{ student.first_name }} {{ student.last_name }}</h2>
+
+    <section>
+        <h3>Основная информация</h3>
+        <p><strong>Email:</strong> {{ student.email }}</p>
+        <p><strong>Телефон:</strong> {{ student.phone|default:"Не указан" }}</p>
+        <p><strong>Дата рождения:</strong> {{ student.birth_date }}</p>
+        <p><strong>Дата регистрации:</strong> {{ student.enrollment_date }}</p>
+    </section>
+
+    <section>
+        <h3>Курсы студента</h3>
+        {% if courses %}
+            <ul>
+                {% for course in courses %}
+                    <li><a href="/schedule/courses/{{ course.id }}/">{{ course.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Нет курсов</p>
+        {% endif %}
+    </section>
+{% endblock %}

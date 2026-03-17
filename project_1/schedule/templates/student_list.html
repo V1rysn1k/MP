@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Список студентов{% endblock %}
+
+{% block content %}
+    <h2>Список студентов</h2>
+
+    <section>
+        {% for student in students %}
+            <article>
+                <h3><a href="/schedule/students/{{ student.id }}/">
+                    {{ student.first_name }} {{ student.last_name }}
+                </a></h3>
+                <p><strong>Email:</strong> {{ student.email }}</p>
+                <p><strong>Дата регистрации:</strong> {{ student.enrollment_date }}</p>
+            </article>
+        {% empty %}
+            <p>Нет студентов</p>
+        {% endfor %}
+    </section>
+{% endblock %}

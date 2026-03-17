@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>ORM запросы</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Главная</a> |
+        <a href="/courses/">Курсы</a> |
+        <a href="/authors/">Авторы</a> |
+        <a href="/info/">Info</a>
+    </nav>
+
+    <h1>ORM запросы</h1>
+
+    <h2>1. Выберите курс, чтобы увидеть всех студентов</h2>
+    <form method="get">
+        <label for="course_id">Курс:</label>
+        <select name="course_id" id="course_id">
+            <option value="">-- Выберите курс --</option>
+            {% for course in all_courses %}
+                <option value="{{ course.id }}" {% if selected_course_id|stringformat:"s" == course.id|stringformat:"s" %}selected{% endif %}>
+                    {{ course.title }} ({{ course.level }})
+                </option>
+            {% endfor %}
+        </select>
+        <button type="submit">Показать студентов</button>
+    </form>
+    
+    {% if selected_course %}
+        <h3>Студенты курса "{{ selected_course.title }}"</h3>
+        <ul>
+            {% for student in course_students %}
+                <li>{{ student.first_name }} {{ student.last_name }} - {{ student.email }}</li>
+            {% empty %}
+                <li>Нет студентов на этом курсе</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <h2>2. Преподаватели, у которых больше N курсов</h2>
+    <form method="get">
+        <label for="n">N =</label>
+        <input type="number" name="n" id="n" value="{{ n }}" min="0">
+        <button type="submit">Показать</button>
+    </form>
+    
+    <ul>
+        {% for teacher in teachers_with_more_than_n_courses %}
+            <li>
+                {{ teacher.first_name }} {{ teacher.last_name }} - 
+                {{ teacher.course_count }} курсов
+            </li>
+        {% empty %}
+            <li>Нет преподавателей с количеством курсов больше {{ n }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>3. Студенты без курсов</h2>
+    <ul>
+        {% for student in students_without_courses %}
+            <li>{{ student.first_name }} {{ student.last_name }} - {{ student.email }}</li>
+        {% empty %}
+            <li>Все студенты записаны на курсы</li>
+        {% endfor %}
+    </ul>
+
+    <h2>4. Преподаватели без биографии</h2>
+    <ul>
+        {% for teacher in teachers_without_bio %}
+            <li>
+                {{ teacher.first_name }} {{ teacher.last_name }} - 
+                {% if teacher.info %}
+                    {{ teacher.info.email }}
+                {% else %}
+                    нет email
+                {% endif %}
+            </li>
+        {% empty %}
+            <li>У всех преподавателей есть биография</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -11,15 +11,17 @@
     <a href="/">Главная</a> |
     <a href="/courses/">Курсы</a> |
     <a href="/authors/">Авторы</a> |
-    <a href="/info/">Info</a>
+    <a href="/info/">Info</a> |
+    <a href="/orm-queries/">ORM-запросы</a> |
+    <a href="/schedule/">Управление</a>
   </nav>
 
   <h2>Популярные курсы</h2>
   <ul>
-    {% for c in latest_courses %}
+    {% for course in latest_courses %}
       <li>
-        <a href="/courses/{{ c.id }}/">{{ c.title }}</a>
-        — {{ c.level }}
+        <a href="/courses/{{ course.id }}/">{{ course.title }}</a>
+        — {{ course.level }}
       </li>
     {% endfor %}
   </ul>

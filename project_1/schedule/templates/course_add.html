@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Добавление курса{% endblock %}
+
+{% block content %}
+    <h2>Добавить новый курс</h2>
+
+    <section>
+        <form method="post">
+            {% csrf_token %}
+            
+            <p>
+                <label>Название курса:</label><br>
+                <input type="text" name="title" required placeholder="Например: Гайд на керри">
+            </p>
+            
+            <p>
+                <label>Описание:</label><br>
+                <textarea name="description" rows="4" cols="50" required placeholder="Описание курса..."></textarea>
+            </p>
+            
+            <p>
+                <label>Автор курса:</label><br>
+                <select name="teacher" required>
+                    <option value="">-- Выберите автора --</option>
+                    {% for teacher in teachers %}
+                        <option value="{{ teacher.id }}">{{ teacher.first_name }} {{ teacher.last_name }}</option>
+                    {% endfor %}
+                </select>
+            </p>
+            
+            <p>
+                <label>Ранг курса:</label><br>
+                <select name="level" required>
+                    <option value="">-- Выберите ранг --</option>
+                    {% for level_value, level_name in levels %}
+                        <option value="{{ level_value }}">{{ level_name }}</option>
+                    {% endfor %}
+                </select>
+            </p>
+            
+            <p>
+                <button type="submit">Добавить курс</button>
+            </p>
+        </form>
+    </section>
+{% endblock %}
