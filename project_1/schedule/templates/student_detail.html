@@ -9,8 +9,10 @@
         <h3>Основная информация</h3>
         <p><strong>Email:</strong> {{ student.email }}</p>
         <p><strong>Телефон:</strong> {{ student.phone|default:"Не указан" }}</p>
-        <p><strong>Дата рождения:</strong> {{ student.birth_date }}</p>
-        <p><strong>Дата регистрации:</strong> {{ student.enrollment_date }}</p>
+        <p><strong>Дата рождения:</strong> {{ student.birth_date|date:"d.m.Y" }}</p>
+        <p><strong>Дата регистрации:</strong> {{ student.enrollment_date|date:"d.m.Y" }}</p>
+        <p><strong>Steam ID:</strong> {{ student.steam_id|default:"Не указан" }}</p>
+        <p><strong>MMR:</strong> {{ student.dota_mmr|default:"Не указан" }}</p>
     </section>
 
     <section>
@@ -18,11 +20,12 @@
         {% if courses %}
             <ul>
                 {% for course in courses %}
-                    <li><a href="/schedule/courses/{{ course.id }}/">{{ course.title }}</a></li>
+                    <li><a href="{% url 'course_detail' course.id %}">{{ course.title }}</a></li>
                 {% endfor %}
             </ul>
         {% else %}
             <p>Нет курсов</p>
         {% endif %}
     </section>
+
 {% endblock %}

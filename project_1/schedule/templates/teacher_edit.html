@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %}Добавление курса{% endblock %}
+{% block title %}Редактирование преподавателя{% endblock %}
 
 {% block content %}
-    <h2>Добавить новый курс</h2>
+    <h2>Редактировать преподавателя: {{ teacher.first_name }} {{ teacher.last_name }}</h2>
 
     <section>
         <form method="post">
@@ -29,9 +29,9 @@
             {% endfor %}
             
             <p>
-                <button type="submit">Добавить курс</button>
+                <button type="submit">Сохранить изменения</button>
+                <a href="/schedule/teachers/"><button type="button">Отмена</button></a>
             </p>
         </form>
     </section>
-
 {% endblock %}

@@ -8,10 +8,10 @@
     <section>
         {% for course in courses %}
             <article>
-                <h3><a href="/schedule/courses/{{ course.id }}/">{{ course.title }}</a></h3>
+                <h3><a href="{% url 'course_detail' course.id %}">{{ course.title }}</a></h3>
                 <p><strong>Автор:</strong> 
                     {% if course.teacher %}
-                        <a href="/schedule/teachers/{{ course.teacher.id }}/">
+                        <a href="{% url 'teacher_detail' course.teacher.id %}">
                             {{ course.teacher.first_name }} {{ course.teacher.last_name }}
                         </a>
                     {% else %}
@@ -19,6 +19,7 @@
                     {% endif %}
                 </p>
                 <p><strong>Ранг:</strong> {{ course.level }}</p>
+                <p><strong>Дата создания:</strong> {{ course.created_at|date:"d.m.Y H:i" }}</p>
                 <p>{{ course.description|truncatechars:100 }}</p>
             </article>
         {% empty %}

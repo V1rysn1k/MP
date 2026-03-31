@@ -1,9 +1,14 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator, RegexValidator
+from django.core.exceptions import ValidationError
+import re
 
 
 class Teacher(models.Model):
     first_name = models.CharField(max_length=50, verbose_name='Имя')
     last_name = models.CharField(max_length=50, verbose_name='Фамилия')
+    
+    created_at = models.DateTimeField(auto_now_add=True, null=True, verbose_name='Дата создания')
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
@@ -11,6 +16,7 @@ class Teacher(models.Model):
     class Meta:
         verbose_name = 'Преподаватель'
         verbose_name_plural = 'Преподаватели'
+        ordering = ['-created_at']
 
 
 class TeacherInfo(models.Model):
@@ -22,7 +28,28 @@ class TeacherInfo(models.Model):
     )
     email = models.EmailField(unique=True, verbose_name='Email')
     bio = models.TextField(max_length=1000, verbose_name='Биография', blank=True)
-
+    
+    phone = models.CharField(
+        max_length=20,
+        blank=True,
+        null=True,
+        verbose_name='Телефон',
+        validators=[
+            RegexValidator(
+                regex=r'^\+?7\d{10}$|^8\d{10}$',
+                message='Телефон должен быть в формате +7XXXXXXXXXX или 8XXXXXXXXXX'
+            )
+        ]
+    )
+    rating = models.DecimalField(
+        max_digits=3,
+        decimal_places=2,
+        null=True,
+        blank=True,
+        verbose_name='Рейтинг',
+        validators=[MinValueValidator(0), MaxValueValidator(20000)]
+    )
+    is_verified = models.BooleanField(default=False,null=True, verbose_name='Верифицирован')
     def __str__(self):
         return f"Информация о {self.teacher}"
 
@@ -59,6 +86,7 @@ class Course(models.Model):
         default='Herald',
         verbose_name='Ранг'
     )
+    created_at = models.DateTimeField(auto_now_add=True, null=True, verbose_name='Дата создания')
 
     def __str__(self):
         return self.title
@@ -66,6 +94,7 @@ class Course(models.Model):
     class Meta:
         verbose_name = 'Курс'
         verbose_name_plural = 'Курсы'
+        ordering = ['-created_at']
 
 
 class Student(models.Model):
@@ -75,6 +104,26 @@ class Student(models.Model):
     phone = models.CharField(max_length=20, blank=True, null=True, verbose_name='Телефон')
     birth_date = models.DateField(verbose_name='Дата рождения')
     enrollment_date = models.DateField(auto_now_add=True, verbose_name='Дата регистрации')
+    
+    steam_id = models.CharField(
+        max_length=50,
+        blank=True,
+        null=True,
+        unique=True,
+        verbose_name='Steam ID',
+        validators=[
+            RegexValidator(
+                regex=r'^[0-9]{17}$',
+                message='Steam ID должен содержать 17 цифр'
+            )
+        ]
+    )
+    dota_mmr = models.PositiveIntegerField(
+        null=True,
+        blank=True,
+        verbose_name='MMR',
+        validators=[MinValueValidator(0), MaxValueValidator(15000)]
+    )
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
@@ -88,12 +137,13 @@ class Enrollment(models.Model):
     STATUS_CHOICES = [
         ('ENROLLED', 'Записан'),
         ('COMPLETED', 'Завершил'),
+        ('DROPPED', 'Отчислен'),
     ]
 
     student = models.ForeignKey(Student, on_delete=models.CASCADE, verbose_name='Студент')
     course = models.ForeignKey(Course, on_delete=models.CASCADE, verbose_name='Курс')
     enrollment_date = models.DateField(auto_now_add=True, verbose_name='Дата записи')
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='ENROLLED')
+    status = models.CharField(max_length=10, null=True, choices=STATUS_CHOICES, default='ENROLLED')
 
     def __str__(self):
         return f"{self.student} — {self.course}"

@@ -8,9 +8,12 @@
     <section>
         {% for teacher in teachers %}
             <article>
-                <h3><a href="/schedule/teachers/{{ teacher.id }}/">
-                    {{ teacher.first_name }} {{ teacher.last_name }}
-                </a></h3>
+                <h3>
+                    <a href="{% url 'teacher_detail' teacher.id %}">
+                        {{ teacher.first_name }} {{ teacher.last_name }}
+                    </a>
+                    <small>(<a href="{% url 'teacher_edit' teacher.id %}"> редактировать</a>)</small>
+                </h3>
                 <p><strong>Email:</strong> 
                     {% if teacher.info %}
                         {{ teacher.info.email }}
@@ -18,15 +21,9 @@
                         не указан
                     {% endif %}
                 </p>
-                <p><strong>Курсы:</strong>
-                    {% if teacher.courses.all %}
-                        {% for course in teacher.courses.all %}
-                            <a href="/schedule/courses/{{ course.id }}/">{{ course.title }}</a>{% if not forloop.last %}, {% endif %}
-                        {% endfor %}
-                    {% else %}
-                        нет курсов
-                    {% endif %}
-                </p>
+                <p><strong>Телефон:</strong> {{ teacher.info.phone|default:"не указан" }}</p>
+                <p><strong>Рейтинг:</strong> {{ teacher.info.rating|default:"не указан" }}</p>
+                <p><strong>Курсов:</strong> {{ teacher.courses.count }}</p>
             </article>
         {% empty %}
             <p>Нет преподавателей</p>

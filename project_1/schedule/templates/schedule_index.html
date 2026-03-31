@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %}Главная{% endblock %}
+{% block title %}Главная - Расписание{% endblock %}
 
 {% block content %}
-    <h2>Добро пожаловать в систему расписания</h2>
+    <h2>Добро пожалвоать в систему расписания</h2>
 
     <section>
         <h3>Статистика</h3>
@@ -13,4 +13,10 @@
             <li>Студентов: {{ students_count }}</li>
         </ul>
     </section>
+
+    <p>
+        <a href="{% url 'teacher_list' %}">Список преподавателей</a> |
+        <a href="{% url 'course_list' %}">Список курсов</a> |
+        <a href="{% url 'student_list' %}">Список студентов</a>
+    </p>
 {% endblock %}

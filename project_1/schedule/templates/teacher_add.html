@@ -8,7 +8,13 @@
     <section>
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
+            
+            <h3>Основная информация</h3>
+            {{ teacher_form.as_p }}
+            
+            <h3>Дополнительная информация</h3>
+            {{ info_form.as_p }}
+            
             <p>
                 <button type="submit">Добавить преподавателя</button>
             </p>

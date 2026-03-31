@@ -8,11 +8,14 @@
     <section>
         {% for student in students %}
             <article>
-                <h3><a href="/schedule/students/{{ student.id }}/">
+                <h3><a href="{% url 'student_detail' student.id %}">
                     {{ student.first_name }} {{ student.last_name }}
                 </a></h3>
                 <p><strong>Email:</strong> {{ student.email }}</p>
-                <p><strong>Дата регистрации:</strong> {{ student.enrollment_date }}</p>
+                <p><strong>Телефон:</strong> {{ student.phone|default:"не указан" }}</p>
+                <p><strong>Steam ID:</strong> {{ student.steam_id|default:"не указан" }}</p>
+                <p><strong>MMR:</strong> {{ student.dota_mmr|default:"не указан" }}</p>
+                <p><strong>Дата регистрации:</strong> {{ student.enrollment_date|date:"d.m.Y" }}</p>
             </article>
         {% empty %}
             <p>Нет студентов</p>
