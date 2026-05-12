@@ -6,10 +6,11 @@ from .models import User
 class RegisterForm(UserCreationForm):
     email = forms.EmailField(required=True, label='Email')
     phone = forms.CharField(max_length=20, required=False, label='Номер телефона')
+    avatar = forms.ImageField(required=False, label='Аватар')
 
     class Meta:
         model = User
-        fields = ('username', 'email', 'phone', 'password1', 'password2')
+        fields = ('username', 'email', 'phone', 'avatar', 'password1', 'password2')
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -20,9 +21,13 @@ class RegisterForm(UserCreationForm):
 class ProfileEditForm(forms.ModelForm):
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'email', 'phone', 'bio')
-
+        fields = ('first_name', 'last_name', 'email', 'phone', 'bio', 'avatar')
+    
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field in self.fields.values():
-            field.widget.attrs['class'] = 'form-control'
+            if hasattr(field, 'widget'):
+                field.widget.attrs['class'] = 'form-control'
+        
+        self.fields['avatar'].required = False
+        self.fields['avatar'].widget.attrs['accept'] = 'image/*'

@@ -1,0 +1,484 @@
+2026-05-05 14:41:35,460 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-05 14:41:38,386 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-05 14:41:38,441 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:40,263 | WARNING  | django.request  | log.py:253 | Not Found: /favicon.ico
+2026-05-05 14:41:40,263 | WARNING  | django.server   | basehttp.py:213 | "GET /favicon.ico HTTP/1.1" 404 4824
+2026-05-05 14:41:45,322 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-05 14:41:47,556 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 302 0
+2026-05-05 14:41:47,571 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1957
+2026-05-05 14:41:47,609 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:53,935 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:41:53,966 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2403
+2026-05-05 14:41:54,000 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:56,008 | DEBUG    | users.views     | views.py:52 | Пользователь Voron просматривает список пользователей. Найдено: 3
+2026-05-05 14:41:56,013 | INFO     | django.server   | basehttp.py:213 | "GET /users/ HTTP/1.1" 200 3166
+2026-05-05 14:41:56,048 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:57,756 | DEBUG    | users.views     | views.py:175 | Пользователь Voron просматривает входящие заявки. Найдено: 0
+2026-05-05 14:41:57,761 | INFO     | django.server   | basehttp.py:213 | "GET /friend/requests/ HTTP/1.1" 200 1413
+2026-05-05 14:41:57,797 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:58,387 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:41:58,391 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2403
+2026-05-05 14:41:58,426 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:59,109 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_change/ HTTP/1.1" 200 2936
+2026-05-05 14:41:59,145 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:41:59,794 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:41:59,798 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2403
+2026-05-05 14:41:59,834 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:42:00,993 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 3824
+2026-05-05 14:42:01,028 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:42:57,155 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-05 14:42:57,157 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-05 14:42:57,167 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:42:57,172 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2509
+2026-05-05 14:42:57,213 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:42:57,213 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:42:57,214 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:42:58,671 | DEBUG    | users.views     | views.py:52 | Пользователь Voron просматривает список пользователей. Найдено: 3
+2026-05-05 14:42:58,672 | INFO     | django.server   | basehttp.py:213 | "GET /users/ HTTP/1.1" 200 3166
+2026-05-05 14:42:58,709 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:42:59,842 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:42:59,845 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:42:59,886 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:42:59,887 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:42:59,887 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:43:00,467 | DEBUG    | users.views     | views.py:175 | Пользователь Voron просматривает входящие заявки. Найдено: 0
+2026-05-05 14:43:00,470 | INFO     | django.server   | basehttp.py:213 | "GET /friend/requests/ HTTP/1.1" 200 1413
+2026-05-05 14:43:00,505 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:43:01,749 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:43:01,753 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:43:01,793 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:43:01,797 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:43:01,797 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:43:08,659 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:43:08,663 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:43:08,699 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:43:08,703 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:43:08,704 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:43:16,408 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:43:16,412 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:43:16,451 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:43:16,451 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:43:16,451 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:43:17,674 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:43:17,677 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:43:17,714 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:43:17,717 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:43:17,718 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:43:29,811 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-05 14:43:29,851 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:43:33,472 | WARNING  | django.request  | log.py:253 | Not Found: /media/avatars/\u043f\u0443\u0434\u0436.jpg
+2026-05-05 14:43:33,473 | WARNING  | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 404 4885
+2026-05-05 14:47:31,347 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\myproject\urls.py changed, reloading.
+2026-05-05 14:47:32,205 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-05 14:47:38,147 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-05 14:47:38,184 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:47:43,227 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:47:43,248 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:47:43,286 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:47:43,350 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 200 6093
+2026-05-05 14:47:52,594 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:47:52,598 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:47:52,638 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:47:53,507 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_change/ HTTP/1.1" 200 2936
+2026-05-05 14:47:53,543 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:48:01,038 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:48:01,041 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:48:01,078 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:48:02,604 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-05 14:48:02,640 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 14:48:09,352 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 14:48:09,355 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 14:48:09,390 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:11:19,962 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 15:11:19,966 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 15:11:20,008 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 304 0
+2026-05-05 15:11:20,011 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:22:00,075 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-05 15:22:00,104 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:22:54,286 | WARNING  | users.views     | views.py:101 | Ошибки валидации при редактировании профиля пользователя Voron: {"avatar": [{"message": "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0435 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435. \u0424\u0430\u0439\u043b, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0432\u044b \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u043b\u0438, \u043f\u043e\u0432\u0440\u0435\u0436\u0434\u0435\u043d \u0438\u043b\u0438 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\u043c.", "code": "invalid_image"}]}
+2026-05-05 15:22:54,290 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 200 4378
+2026-05-05 15:22:54,326 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:23:01,479 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 15:23:01,482 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 15:23:01,518 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 304 0
+2026-05-05 15:23:01,518 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:23:05,817 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 15:23:05,820 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 15:23:05,853 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:23:07,685 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 15:23:07,688 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 15:23:07,721 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:23:09,415 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-05 15:23:09,449 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:23:47,326 | INFO     | django.server   | basehttp.py:213 | "POST /auth/logout/ HTTP/1.1" 302 0
+2026-05-05 15:23:47,330 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-05 15:23:47,365 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:23:48,444 | INFO     | django.server   | basehttp.py:213 | "GET /register/ HTTP/1.1" 200 2613
+2026-05-05 15:23:55,414 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-05 15:23:57,255 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 302 0
+2026-05-05 15:23:57,266 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1957
+2026-05-05 15:23:57,306 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:24:20,109 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-05 15:24:20,113 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-05 15:24:20,148 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-05 15:24:22,586 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-05 15:24:22,620 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 13:57:12,912 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 13:57:20,746 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 13:57:20,836 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 13:57:20,889 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 13:57:23,397 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 13:57:25,049 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 13:57:39,377 | ERROR    | django.contrib.auth | forms.py:436 | Failed to send password reset email to 4
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\forms.py", line 434, in send_mail
+    email_message.send()
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/accounts/troubleshooter/2402620. 38308e7fff4ca-393f5f3a2a2sm32820901fa.11 - gsmtp', 'django.hotel1019@gmail.com')
+2026-05-12 13:57:39,385 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 13:57:39,391 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 13:59:38,627 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 13:59:45,672 | ERROR    | django.contrib.auth | forms.py:436 | Failed to send password reset email to 4
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\forms.py", line 434, in send_mail
+    email_message.send()
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/accounts/troubleshooter/2402620. 38308e7fff4ca-393f5f18d66sm32588931fa.6 - gsmtp', 'django.hotel1019@gmail.com')
+2026-05-12 13:59:45,676 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 13:59:45,680 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:01:25,548 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\myproject\settings.py changed, reloading.
+2026-05-12 14:01:26,278 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 14:01:33,962 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:01:38,146 | ERROR    | django.contrib.auth | forms.py:436 | Failed to send password reset email to 4
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\forms.py", line 434, in send_mail
+    email_message.send()
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/accounts/troubleshooter/2402620. 38308e7fff4ca-393f9ffa0a0sm31166951fa.21 - gsmtp', 'django.hotel1019@gmail.com')
+2026-05-12 14:01:38,151 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 14:01:38,157 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:02:07,083 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\myproject\settings.py changed, reloading.
+2026-05-12 14:02:07,804 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 14:02:27,683 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:02:29,719 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:02:55,947 | ERROR    | django.contrib.auth | forms.py:436 | Failed to send password reset email to 4
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\forms.py", line 434, in send_mail
+    email_message.send()
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\message.py", line 307, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 136, in send_messages
+    sent = self._send(message)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\mail\backends\smtp.py", line 155, in _send
+    self.connection.sendmail(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 887, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/accounts/troubleshooter/2402620. 38308e7fff4ca-393f60db4f1sm32904951fa.27 - gsmtp', 'django.hotel1019@gmail.com')
+2026-05-12 14:02:55,951 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 14:02:55,955 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:03:29,505 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\myproject\settings.py changed, reloading.
+2026-05-12 14:03:30,259 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 14:03:52,741 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:03:54,071 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:04:08,651 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 14:04:08,656 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:04:40,063 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:04:42,833 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:04:43,318 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:04:45,190 | INFO     | django.server   | basehttp.py:213 | "GET /register/ HTTP/1.1" 200 2613
+2026-05-12 14:04:58,813 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/d7nko0-292cac3e086707b548d51b4b529f6a46/ HTTP/1.1" 200 415
+2026-05-12 14:04:58,919 | WARNING  | django.request  | log.py:253 | Not Found: /favicon.ico
+2026-05-12 14:04:58,920 | WARNING  | django.server   | basehttp.py:213 | "GET /favicon.ico HTTP/1.1" 404 4993
+2026-05-12 14:05:44,309 | WARNING  | users.views     | views.py:27 | Ошибки валидации при регистрации: {"username": [{"message": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c \u0441 \u0442\u0430\u043a\u0438\u043c \u0438\u043c\u0435\u043d\u0435\u043c \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442.", "code": "unique"}], "email": [{"message": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c \u0441 \u0442\u0430\u043a\u0438\u043c Email \u0443\u0436\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442.", "code": "unique"}]}
+2026-05-12 14:05:44,327 | INFO     | django.server   | basehttp.py:213 | "POST /register/ HTTP/1.1" 200 3027
+2026-05-12 14:05:54,617 | INFO     | django.server   | basehttp.py:213 | "GET /register/ HTTP/1.1" 200 2613
+2026-05-12 14:05:56,633 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:06:07,491 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:06:17,075 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:06:22,543 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:06:27,262 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:06:30,965 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:06:34,565 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/d7nko0-292cac3e086707b548d51b4b529f6a46/ HTTP/1.1" 200 415
+2026-05-12 14:06:35,724 | INFO     | django.server   | basehttp.py:213 | "POST /auth/reset/NA/d7nko0-292cac3e086707b548d51b4b529f6a46/ HTTP/1.1" 200 415
+2026-05-12 14:06:39,039 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/d7nko0-292cac3e086707b548d51b4b529f6a46/ HTTP/1.1" 200 415
+2026-05-12 14:07:03,698 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 14:07:25,587 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 14:07:25,675 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:07:25,714 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:07:31,834 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:07:39,629 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:08:04,200 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 14:08:04,205 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:43:36,332 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 14:43:39,179 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 14:43:39,265 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:43:39,300 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:43:41,294 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:43:49,280 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:44:14,949 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:44:18,804 | INFO     | django.server   | basehttp.py:213 | "GET /register/ HTTP/1.1" 200 2613
+2026-05-12 14:44:35,904 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:44:48,889 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:45:01,530 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:45:07,510 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:45:19,652 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 14:45:19,657 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:45:59,103 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/d8gznh-0574893de9a9f7e60b34c5afc9ee4bdd/ HTTP/1.1" 302 0
+2026-05-12 14:45:59,117 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/set-password/ HTTP/1.1" 200 1632
+2026-05-12 14:45:59,237 | WARNING  | django.request  | log.py:253 | Not Found: /favicon.ico
+2026-05-12 14:45:59,238 | WARNING  | django.server   | basehttp.py:213 | "GET /favicon.ico HTTP/1.1" 404 4993
+2026-05-12 14:46:09,788 | INFO     | django.server   | basehttp.py:213 | "POST /auth/reset/NA/set-password/ HTTP/1.1" 200 1834
+2026-05-12 14:46:18,216 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:46:29,584 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:46:44,808 | INFO     | django.server   | basehttp.py:213 | "POST /auth/reset/NA/set-password/ HTTP/1.1" 200 1834
+2026-05-12 14:46:51,087 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:46:58,917 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 14:46:59,003 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:47:00,294 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:47:07,369 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 200 1069
+2026-05-12 14:47:08,757 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:47:10,717 | INFO     | django.server   | basehttp.py:213 | "GET /register/ HTTP/1.1" 200 2613
+2026-05-12 14:47:44,066 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:47:47,210 | INFO     | django.server   | basehttp.py:213 | "GET /register/ HTTP/1.1" 200 2613
+2026-05-12 14:47:54,800 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 14:47:54,812 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:47:57,623 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 14:47:57,635 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:50:25,498 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\myproject\settings.py changed, reloading.
+2026-05-12 14:57:47,717 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 14:57:50,303 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1101
+2026-05-12 14:57:50,392 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:57:50,430 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:57:52,118 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:57:53,013 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/ HTTP/1.1" 200 775
+2026-05-12 14:58:09,480 | INFO     | django.server   | basehttp.py:213 | "POST /auth/password_reset/ HTTP/1.1" 302 0
+2026-05-12 14:58:09,486 | INFO     | django.server   | basehttp.py:213 | "GET /auth/password_reset/done/ HTTP/1.1" 200 327
+2026-05-12 14:58:23,880 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/d8h08v-2eb1031e7de8c3e8bf0706964bce9ad3/ HTTP/1.1" 302 0
+2026-05-12 14:58:23,909 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/NA/set-password/ HTTP/1.1" 200 1632
+2026-05-12 14:58:38,081 | INFO     | django.server   | basehttp.py:213 | "POST /auth/reset/NA/set-password/ HTTP/1.1" 200 1834
+2026-05-12 14:58:56,504 | INFO     | django.server   | basehttp.py:213 | "POST /auth/reset/NA/set-password/ HTTP/1.1" 302 0
+2026-05-12 14:58:56,512 | INFO     | django.server   | basehttp.py:213 | "GET /auth/reset/done/ HTTP/1.1" 200 274
+2026-05-12 14:59:02,513 | INFO     | django.server   | basehttp.py:213 | "GET /auth/login/ HTTP/1.1" 200 812
+2026-05-12 14:59:12,015 | INFO     | django.server   | basehttp.py:213 | "POST /auth/login/ HTTP/1.1" 302 0
+2026-05-12 14:59:12,029 | INFO     | django.server   | basehttp.py:213 | "GET / HTTP/1.1" 200 1957
+2026-05-12 14:59:12,041 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:59:23,941 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 14:59:23,968 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2386
+2026-05-12 14:59:23,983 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:59:24,046 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%BF%D1%83%D0%B4%D0%B6.jpg HTTP/1.1" 200 6093
+2026-05-12 14:59:37,862 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4076
+2026-05-12 14:59:37,877 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:59:46,708 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-12 14:59:46,717 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 14:59:46,727 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 14:59:46,731 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2512
+2026-05-12 14:59:46,745 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 14:59:46,746 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2.jfif HTTP/1.1" 200 16326
+2026-05-12 15:09:45,968 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4082
+2026-05-12 15:09:46,005 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:09:52,867 | ERROR    | django.request  | log.py:253 | Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\Desktop\МП\project_2\users\views.py", line 89, in profile_edit
+    if avatar and not avatar.content_type.startswith('image/'):
+                      ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ImageFieldFile' object has no attribute 'content_type'
+2026-05-12 15:09:52,889 | ERROR    | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 500 78895
+2026-05-12 15:09:59,659 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:10:13,745 | ERROR    | django.request  | log.py:253 | Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\Desktop\МП\project_2\users\views.py", line 89, in profile_edit
+    if avatar and not avatar.content_type.startswith('image/'):
+                      ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ImageFieldFile' object has no attribute 'content_type'
+2026-05-12 15:10:13,763 | ERROR    | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 500 78895
+2026-05-12 15:10:23,574 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:10:27,701 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-12 15:10:27,715 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:10:27,737 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:10:27,746 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2578
+2026-05-12 15:10:27,780 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:10:52,001 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 3827
+2026-05-12 15:10:52,058 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:11:08,538 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-12 15:11:08,551 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:11:08,577 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:11:08,585 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2578
+2026-05-12 15:11:08,615 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:11:10,938 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 3827
+2026-05-12 15:11:10,969 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:11:21,493 | WARNING  | users.views     | views.py:101 | Ошибки валидации при редактировании профиля пользователя Voron: {"avatar": [{"message": "\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u0435 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e\u0435 \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435. \u0424\u0430\u0439\u043b, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0432\u044b \u0437\u0430\u0433\u0440\u0443\u0437\u0438\u043b\u0438, \u043f\u043e\u0432\u0440\u0435\u0436\u0434\u0435\u043d \u0438\u043b\u0438 \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f \u0438\u0437\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435\u043c.", "code": "invalid_image"}]}
+2026-05-12 15:11:21,511 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 200 4129
+2026-05-12 15:11:21,542 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:11:56,194 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-12 15:11:56,207 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:11:56,232 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:11:56,241 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2572
+2026-05-12 15:11:56,276 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:11:56,278 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_AOSWa9b.jfif HTTP/1.1" 200 16326
+2026-05-12 15:12:27,456 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4101
+2026-05-12 15:12:27,485 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:12:33,415 | ERROR    | django.request  | log.py:253 | Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Иван\Desktop\МП\project_2\users\views.py", line 89, in profile_edit
+    if avatar and not avatar.content_type.startswith('image/'):
+                      ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ImageFieldFile' object has no attribute 'content_type'
+2026-05-12 15:12:33,431 | ERROR    | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 500 78908
+2026-05-12 15:12:34,598 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:12:36,561 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-12 15:12:36,574 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:12:36,599 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:12:36,607 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2583
+2026-05-12 15:12:36,637 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:12:41,608 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 3832
+2026-05-12 15:12:41,653 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:12:44,397 | INFO     | users.views     | views.py:97 | Пользователь Voron обновил свой профиль
+2026-05-12 15:12:44,409 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:12:44,433 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:12:44,440 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2586
+2026-05-12 15:12:44,470 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:15:23,732 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\users\views.py changed, reloading.
+2026-05-12 15:15:24,505 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 15:15:31,022 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 3835
+2026-05-12 15:15:31,034 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:15:34,911 | INFO     | users.views     | views.py:112 | Пользователь Voron обновил свой профиль и загрузил новую аватарку
+2026-05-12 15:15:34,918 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:15:34,929 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:15:34,950 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2580
+2026-05-12 15:15:34,965 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:15:35,032 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_phhjwV7.jfif HTTP/1.1" 200 16326
+2026-05-12 15:15:35,709 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4109
+2026-05-12 15:15:35,722 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:15:38,626 | ERROR    | users.views     | views.py:103 | Ошибка при проверке аватара: 'ImageFieldFile' object has no attribute 'content_type'
+Traceback (most recent call last):
+  File "C:\Users\Иван\Desktop\МП\project_2\users\views.py", line 97, in profile_edit
+    if not avatar.content_type.startswith('image/'):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ImageFieldFile' object has no attribute 'content_type'
+2026-05-12 15:15:38,637 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 200 4275
+2026-05-12 15:15:38,652 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:17:32,753 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\users\forms.py changed, reloading.
+2026-05-12 15:17:33,521 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 15:17:36,932 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:17:36,963 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2457
+2026-05-12 15:17:36,980 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:17:36,981 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_phhjwV7.jfif HTTP/1.1" 304 0
+2026-05-12 15:17:37,774 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4109
+2026-05-12 15:17:37,786 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:17:40,802 | ERROR    | users.views     | views.py:103 | Ошибка при проверке аватара: 'ImageFieldFile' object has no attribute 'content_type'
+Traceback (most recent call last):
+  File "C:\Users\Иван\Desktop\МП\project_2\users\views.py", line 97, in profile_edit
+    if not avatar.content_type.startswith('image/'):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ImageFieldFile' object has no attribute 'content_type'
+2026-05-12 15:17:40,814 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 200 4272
+2026-05-12 15:17:40,828 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:17:57,761 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 15:18:08,915 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:18:08,946 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2457
+2026-05-12 15:18:08,962 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:18:08,962 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_phhjwV7.jfif HTTP/1.1" 304 0
+2026-05-12 15:18:09,831 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4109
+2026-05-12 15:18:09,846 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:18:17,969 | ERROR    | users.views     | views.py:103 | Ошибка при проверке аватара: 'ImageFieldFile' object has no attribute 'content_type'
+Traceback (most recent call last):
+  File "C:\Users\Иван\Desktop\МП\project_2\users\views.py", line 97, in profile_edit
+    if not avatar.content_type.startswith('image/'):
+           ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ImageFieldFile' object has no attribute 'content_type'
+2026-05-12 15:18:17,979 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 200 4273
+2026-05-12 15:18:17,993 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:00,364 | INFO     | django.utils.autoreload | autoreload.py:265 | C:\Users\Иван\Desktop\МП\project_2\users\views.py changed, reloading.
+2026-05-12 15:19:01,080 | INFO     | django.utils.autoreload | autoreload.py:667 | Watching for file changes with StatReloader
+2026-05-12 15:19:10,186 | INFO     | users.views     | views.py:107 | Пользователь Voron обновил свой профиль
+2026-05-12 15:19:10,199 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:19:10,210 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:19:10,234 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2572
+2026-05-12 15:19:10,251 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:10,251 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_phhjwV7.jfif HTTP/1.1" 304 0
+2026-05-12 15:19:11,533 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4101
+2026-05-12 15:19:11,546 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:14,638 | INFO     | users.views     | views.py:107 | Пользователь Voron обновил свой профиль
+2026-05-12 15:19:14,643 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:19:14,653 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:19:14,657 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2575
+2026-05-12 15:19:14,670 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:24,697 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4104
+2026-05-12 15:19:24,711 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:33,269 | INFO     | users.views     | views.py:107 | Пользователь Voron обновил свой профиль
+2026-05-12 15:19:33,275 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:19:33,285 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:19:33,289 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2581
+2026-05-12 15:19:33,303 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:34,199 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 3830
+2026-05-12 15:19:34,213 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:38,844 | INFO     | users.views     | views.py:105 | Пользователь Voron обновил свой профиль и загрузил новую аватарку
+2026-05-12 15:19:38,850 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:19:38,859 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:19:38,863 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2575
+2026-05-12 15:19:38,877 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:38,943 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_GjEXhyy.jfif HTTP/1.1" 200 16326
+2026-05-12 15:19:39,697 | INFO     | django.server   | basehttp.py:213 | "GET /profile/edit/ HTTP/1.1" 200 4104
+2026-05-12 15:19:39,710 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853
+2026-05-12 15:19:44,892 | INFO     | users.views     | views.py:107 | Пользователь Voron обновил свой профиль
+2026-05-12 15:19:44,897 | INFO     | django.server   | basehttp.py:213 | "POST /profile/edit/ HTTP/1.1" 302 0
+2026-05-12 15:19:44,906 | DEBUG    | users.views     | views.py:65 | Пользователь Voron просматривает профиль Voron (владелец: True, друг: False)
+2026-05-12 15:19:44,910 | INFO     | django.server   | basehttp.py:213 | "GET /users/Voron/ HTTP/1.1" 200 2588
+2026-05-12 15:19:44,923 | INFO     | django.server   | basehttp.py:213 | "GET /media/avatars/%D0%B3%D0%B5%D0%B9%D0%B1_2_GjEXhyy.jfif HTTP/1.1" 304 0
+2026-05-12 15:19:44,923 | WARNING  | django.server   | basehttp.py:213 | "GET /static/css/style.css HTTP/1.1" 404 1853

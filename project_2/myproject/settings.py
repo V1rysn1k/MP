@@ -91,7 +91,89 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'ivan.voronko718@gmail.com'
-EMAIL_HOST_PASSWORD = 'vtpodwrmyyrravzy'
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = 'yrocgwaskufxqoni'
+EMAIL_HOST_USER = 'django.hotel1019@gmail.com'
+
+
+LOG_DIR = BASE_DIR / 'logs'
+if not os.path.exists(LOG_DIR):
+    os.makedirs(LOG_DIR)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '{asctime} | {levelname:8} | {name:15} | {filename}:{lineno} | {message}',
+            'style': '{',
+        },
+        'detailed': {
+            'format': '[{asctime}] {levelname} - {name} - {funcName}():{lineno} - {message}',
+            'style': '{',
+        },
+        'simple': {
+            'format': '{levelname} | {message}',
+            'style': '{',
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'level': 'DEBUG',
+            'formatter': 'verbose',
+        },
+        'rotating_file': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'level': 'INFO',
+            'filename': LOG_DIR / 'app_rotating.log',
+            'maxBytes': 1024 * 1024,
+            'backupCount': 5,
+            'formatter': 'detailed',
+            'encoding': 'utf-8',
+        },
+        'timed_file': {
+            'class': 'logging.handlers.TimedRotatingFileHandler',
+            'level': 'INFO',
+            'filename': LOG_DIR / 'app_timed.log',
+            'when': 'midnight',
+            'interval': 1,
+            'backupCount': 7,
+            'formatter': 'verbose',
+            'encoding': 'utf-8',
+        },
+        'app_file': {
+            'class': 'logging.FileHandler',
+            'level': 'DEBUG',
+            'filename': LOG_DIR / 'app.log',
+            'formatter': 'verbose',
+            'encoding': 'utf-8',
+        },
+    },
+    'loggers': {
+        'users': {
+            'handlers': ['console', 'rotating_file', 'timed_file', 'app_file'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+        'django': {
+            'handlers': ['console', 'rotating_file', 'timed_file', 'app_file'],
+            'level': 'INFO',
+            'propagate': False,
+        },
+    },
+    'root': {
+        'handlers': ['console', 'app_file'],
+        'level': 'WARNING',
+    },
+}
+
+STATIC_URL = 'static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+

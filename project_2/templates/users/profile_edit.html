@@ -7,12 +7,15 @@
             <span class="auth-icon">✏️</span>
             <h2>Редактировать профиль</h2>
         </div>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             {% csrf_token %}
             {% for field in form %}
                 <div class="form-group">
                     <label>{{ field.label }}</label>
                     {{ field }}
+                    {% if field.help_text %}
+                        <small class="form-text text-muted">{{ field.help_text }}</small>
+                    {% endif %}
                     {% if field.errors %}
                         {% for error in field.errors %}<span class="field-error">{{ error }}</span>{% endfor %}
                     {% endif %}
